@@ -44,10 +44,15 @@ Using the Figma Exporter package is beneficial because, when the color naming co
 
 - `figma_exporter_lz` looks for `token` in the `./scripts/colors` files located in the directory, and fetches all the tokens.
 - Then it looks for all the `#hexCode` and `token naming`.
-- after then will regenerate the into `enums` or `class`
+- after then will regenerate the into `enums` or `class`.
+- finally you only need to follow the figma variable name and assigned the
 
 ## Limitations 😔
 
 - This package currently works only for `Figma`, which exported from Figma and located the token in `.scripts/color` file.
 - It required `local variable` when color used in figma.
-- mainly for `personal use`.
+- mainly for `personal use`, therefore file structure is hardcoded.
+
+## Error and Limitation 😭
+
+- when you used `Previous` version before, you might notice new upgraded/commits is not working. please delete `pubspec.lock` then `pub get` to get the latest commits/upgraded version.
