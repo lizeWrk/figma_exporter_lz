@@ -1,39 +1,38 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# figma_exporter_lz
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages). 
+Dart package to help Generate exported token from figma to flutter class or enums.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages). 
--->
+> NOTE : This package has been developed for personal use, might need suit to every `Scenarios`.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+![Package in action](https://github.com/lizeWrk/figma_exporter_lz)
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+```sh
+# Add translations_cleaner_lz as a Local dependency
+figma_exporter:
+   git:
+     url: https://github.com/lizeWrk/figma_exporter_lz
+     ref: version2
 
-```dart
-const like = 'sample';
+dart run figma_exporter:generate_enums_colors
+# OR
+flutter dart run figma_exporter:generate_enums_colors
+
 ```
 
-## Additional information
+## Why 🤔
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+Using the Figma Exporter package is beneficial because, when the color naming conventions in the project differ from those in Figma, developers often spend a significant amount of time deciding on color names, checking whether a color already exists in the project, and verifying the corresponding variable name for the color code. This package streamlines the process by converting color tokens into classes and enums, saving time and reducing the manual effort required.
+
+## How 🤖
+
+- `figma_exporter_lz` looks for `token` in the `./scripts/colors` files located in the directory, and fetches all the tokens.
+- Then it looks for all the `#hexCode` and `token naming`.
+- after then will regenerate the into `enums` or `class`
+
+## Limitations 😔
+
+- This package currently works only for `Figma`, which exported from Figma and located the token in `.scripts/color` file.
+- It required `local variable` when color used in figma.
+- mainly for `personal use`.
