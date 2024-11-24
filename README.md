@@ -9,7 +9,7 @@ Dart package to help Generate exported token from figma to flutter class or enum
 ## Usage - enums
 
 ```sh
-# Add translations_cleaner_lz as a Local dependency
+# Add figma_exporter_lz as a Local dependency
 figma_exporter:
    git:
      url: https://github.com/lizeWrk/figma_exporter_lz
@@ -24,7 +24,7 @@ flutter dart run figma_exporter:generate_enums_colors
 ## Usage - class
 
 ```sh
-# Add translations_cleaner_lz as a Local dependency
+# Add figma_exporter_lz as a Local dependency
 figma_exporter:
    git:
      url: https://github.com/lizeWrk/figma_exporter_lz

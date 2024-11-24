@@ -1,6 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
 
+///This Scripts is directly us in project directory.
+/// run "dart ./scripts/updateColorsEnums.scripts.dart"
+/// run "dart ./scripts/updateColorsClass.scripts.dart"
 void main() async {
   // Define the folder path
   final folderPath = './scripts/colors';
