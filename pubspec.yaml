@@ -20,4 +20,5 @@ dev_dependencies:
   test: ^1.24.0
 
 executables:
-  generate_colors: generateColors.dart
+  # generate_colors: generateColors.dart
+  generate_colors: generate_colors.dart
