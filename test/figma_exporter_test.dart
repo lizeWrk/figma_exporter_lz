@@ -1,4 +1,4 @@
-import 'package:figma_exporter/figma_exporter.dart';
+import 'package:figma_exporter_lz/figma_exporter_lz.dart';
 import 'package:test/test.dart';
 
 void main() {

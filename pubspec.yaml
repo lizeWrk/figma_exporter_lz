@@ -1,11 +1,11 @@
-name: figma_exporter
+name: figma_exporter_lz
 description: A starting point for Dart libraries or applications.
 version: 1.0.0
 repository: https://github.com/lizeWrk/figma_exporter_lz
 
 scripts:
   "activate:global": dart pub global activate --source path .
-  "deactivate:global": dart pub global deactivate figma_exporter
+  "deactivate:global": dart pub global deactivate figma_exporter_lz
   "list:global": dart pub global list
 
 environment:
