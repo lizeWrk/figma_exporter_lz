@@ -1,4 +1,4 @@
-import 'package:figma_exporter_lz/figma_exporter_lz.dart';
+// import 'package:figma_exporter_lz/figma_exporter_lz.dart';
 
 Future<void> main() async {
   // final folderPath = './scripts/colors';
