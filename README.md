@@ -50,8 +50,8 @@ Using the Figma Exporter package is beneficial because, when the color naming co
 ## Limitations 😔
 
 - This package currently works only for `Figma`, which exported from Figma and located the token in `.scripts/color` file.
-- It required `local variable` when color used in figma.
-- mainly for `personal use`, therefore file structure is hardcoded.
+- It required use `local variable` in figma.
+- mainly for `personal use`, therefore output and input file structure is hardcoded.
 
 ## Error and Limitation 😭
 
